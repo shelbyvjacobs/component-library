@@ -45,14 +45,34 @@ storiesOf('Form', module)
 // number input/counter
 
 //text input with button
-.add('Text Button', () => <Form 
-    label="Voucher Code" 
-    type="text-button"
-    inputType="text"
-/>)
-.add('Large Text Button', () => <Form
-    label="Voucher Code"
-    type="text-button"
-    inputType="text"
-    largeTextButton
-/>)
+    .add('Medium Text Button', () => <Form 
+        label="Voucher Code" 
+        type="text-button"
+        inputType="text-button"
+        button="medium-button"
+        mediumForm
+    />)
+    .add('Large Text Button', () => <Form
+        label="Voucher Code"
+        type="text-button"
+        inputType="text-button"
+        button="large-button"
+        largeForm
+    />)
+
+//checkbox
+    .add('Black Checkbox', () => <Form
+        type="checkbox"
+        inputType="checkbox"
+        color="black"
+    />)
+    .add('Blue Checkbox', () => <Form
+        type="checkbox"
+        inputType="checkbox"
+        color="blue"
+    />)
+    .add('Black Checkbox No Popups', () => <Form
+        type="checkbox"
+        inputType="checkbox"
+        color="black"
+    />)

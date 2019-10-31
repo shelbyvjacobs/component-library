@@ -1,4 +1,10 @@
 /* form input */
+p{
+    margin: 5px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
 .input-email{
     padding: 5px;
 }
@@ -45,4 +51,36 @@
 
 .largeSelect{
     padding: 15px;
+}
+
+/* number input */
+
+/* text input with button */
+.mediumTextButton{
+    background-color: #33A0FF;
+    padding: 12px;
+    border-radius: 0px 4px 4px 0px;
+    color: white;
+}
+
+.largeTextButton{
+    background-color: #33A0FF;
+    padding: 17px;
+    border-radius: 0px 4px 4px 0px;
+    color: white;
+}
+
+/* checkboxes */
+.blue {
+    border-color: #33A0FF;
+    height: 25px;
+    width: 25px;
+    border-radius: 4px;
+}
+
+.black {
+    border-color: #22262A;
+    height: 25px;
+    width: 25px;
+    border-radius: 4px;
 }
