@@ -1,0 +1,48 @@
+/* form input */
+.input-email{
+    padding: 5px;
+}
+
+.input-email:focus{
+    outline: none;
+}
+
+.mediumForm{
+    padding: 10px;
+}
+
+.largeForm{
+    padding: 15px;
+}
+
+/* select input */
+.input-select{
+    border: solid 1px #F1F3F4;
+    display: inline-block;
+    width: auto;
+    background-color: white;
+    background-image: url('../Forms/Form-img/arrow down.svg');
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    appearance: none;
+    width: 200px;
+}
+
+.input-select:focus{
+    outline: none;
+}
+
+.smallSelect{
+    padding: 5px;
+    width: 125px;
+}
+
+.mediumSelect{
+    padding: 10px;
+}
+
+.largeSelect{
+    padding: 15px;
+}
