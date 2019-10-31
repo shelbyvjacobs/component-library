@@ -1,0 +1,121 @@
+button {
+    padding: 5px 25px;
+    color: white;
+    border-radius: 4px;
+}
+
+.button-primary {
+    background-color: #33A0FF;
+    border: #33A0FF;
+}
+
+.button-danger {
+    background-color: #FF4858;
+    border: #FF4858;
+}
+
+.button-success {
+    background-color: #0AD00A;
+    border: #0AD00A;
+}
+
+.button-warning {
+    background-color: #FFC600;
+    border: #FFC600;
+}
+
+.button-default {
+    background-color: #22262A;
+    border: #22262A;
+}
+
+.button-large { 
+/* conditional styles */
+    padding: 10px 50px;
+}
+
+.button-primary:hover {
+    background-color: #2E90E5;
+    border: #2E90E5;
+}
+
+.button-danger:hover {
+    background-color: #F53848;
+    border: #F53848;
+}
+
+.button-success:hover {
+    background-color: #07C107;
+    border: #07C107;
+}
+
+.button-warning:hover {
+    background-color: #EBB600;
+    border: #EBB600;
+}
+
+.button-default:hover {
+    background-color: #13161A;
+    border: #13161A;
+}
+
+.button-primary-invert {
+    border: solid 1px #33A0FF;
+    color: #33A0FF;
+}
+
+.button-danger-invert {
+    border: solid 1px #FF4858;
+    color: #FF4858;
+}
+
+.button-success-invert {
+    border: solid 1px #0AD00A;
+    color: #0AD00A;
+}
+
+.button-warning-invert {
+    border: solid 1px #FFC600;
+    color: #FFC600;
+}
+
+.button-default-invert {
+    border: solid 1px #22262A;
+    color: #22262A;
+}
+
+.button-primary-light {
+    background-color: rgba(51, 160, 255, .1);
+    color: #33A0FF;
+    border: none;
+}
+
+.button-danger-light {
+    background-color: rgba(255, 72, 88, .1);
+    color: #FF4858;
+    border: none;
+}
+
+.button-success-light {
+    background-color: rgba(10, 208, 10, .1);
+    color: #0AD00A;
+    border: none;
+}
+
+.button-warning-light {
+    background-color: rgba(255, 198, 0, .1);
+    color: #ffc600;
+    border: none;
+}
+
+.button-default-light {
+    background-color: rgb(34, 38, 42, .1);
+    color: #22262a;
+    border: none;
+}
+
+/* primary -  #33A0FF #2E90E5 */
+/* danger -  #FF4858 #F53848 */
+/* success -  #0AD00A #07C107 */
+/* warning -  #FFC600 #EBB600 */
+/* default -  #22262A #13161A */
