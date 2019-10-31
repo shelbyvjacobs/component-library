@@ -114,6 +114,14 @@ button {
     border: none;
 }
 
+.icon {
+    padding: 10px;
+}
+
+.icon-only {
+    padding: 10px;
+}
+
 /* primary -  #33A0FF #2E90E5 */
 /* danger -  #FF4858 #F53848 */
 /* success -  #0AD00A #07C107 */

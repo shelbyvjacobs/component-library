@@ -2,7 +2,6 @@ import React from 'react';
 import "./Button.css"
 import { conditionalExpression } from '@babel/types';
 
-// This is a functional component - just sent up a little differently as an arrow function!
 const Button= (props) => {
     let classList = ''
     let types = ['primary', 'danger', 'success', 'warning', 'default', 
@@ -15,8 +14,14 @@ const Button= (props) => {
     if (props.large) {
         classList += ` button-large`
     }
+    if (props.icon && !props.label){
+        classList += ` icon-only`
+    }
+    if (props.icon && props.label){
+        classList += ` icon`
+    }
     return <button className={classList} onClick={props.onClick}> 
-        {props.label} 
+        <img src={props.icon}></img> {props.label} 
     </button>
 }
 

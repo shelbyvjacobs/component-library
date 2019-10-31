@@ -1,22 +1,17 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import "./Button.css"
-
-//this file is pulling from Storybook; we'll also change stuff up in here
-
+import cart from '../Buttons/Button-img/cart_2.svg';
+import heart from '../Buttons/Button-img/hearts.svg';
 import Button from './Button';
 import { conditionalExpression } from '@babel/types';
 
-storiesOf('Button', module) //naming the group of stories
+storiesOf('Button', module)
+// basic buttons
     .add('Primary', () => <Button 
         label="Primary" 
         type= "primary"
     />)
-    //first 'Primary' is the name of the story
-    //add method; looks like a promise in a fetch. Calls a story's name
-    //then a callback function that returns a component
-    //pass in the property of label, which returns primary
-    //can add styles in here!
     .add('Danger', () => <Button 
         label="Danger" 
         type="danger"
@@ -33,7 +28,7 @@ storiesOf('Button', module) //naming the group of stories
         label="Default"
         type="default"
     />)
-    // conditional styling
+// large basic buttons
     .add('Large Primary', () => <Button
         label="Large"
         type="primary"
@@ -59,6 +54,7 @@ storiesOf('Button', module) //naming the group of stories
         type="default"
         large
     />)
+// buttons with white backgrounds
     .add('Primary Invert', () => <Button
         label="Primary"
         type="primary-invert"
@@ -79,6 +75,7 @@ storiesOf('Button', module) //naming the group of stories
         label="Default"
         type="default-invert"
     />)
+// large buttons with white backgrounds
     .add('Large Primary Invert', () => <Button
         label="Primary"
         type="primary-invert"
@@ -104,6 +101,7 @@ storiesOf('Button', module) //naming the group of stories
         type="default-invert"
         large
     />)
+// buttons with lighter background
     .add('Primary Light', () => <Button
         label="Primary"
         type="primary-light"
@@ -124,6 +122,7 @@ storiesOf('Button', module) //naming the group of stories
         label="Default"
         type="default-light"
     />)
+// larger buttons with lighter backgrounds
     .add('Large Primary Light', () => <Button
         label="Primary"
         type="primary-light"
@@ -149,5 +148,24 @@ storiesOf('Button', module) //naming the group of stories
         type="default-light"
         large
     />)
-
+// icon buttons
+    .add('Cart', () => <Button
+        type="primary-light"
+        icon={cart}
+    />)
+    .add('Heart', () => <Button
+        type="primary-light"
+        icon={heart}
+    />)
+// icon buttons with labels
+    .add('Add To Cart', () => <Button
+        label="Add To Cart"
+        type="primary-light"
+        icon={cart}
+    />)
+    .add('Add To Favorites', () => <Button
+        label="Add To Cart"
+        type="primary-light"
+        icon={heart}
+    />)
     
