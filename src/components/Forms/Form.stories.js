@@ -42,3 +42,17 @@ storiesOf('Form', module)
         inputType="select"
         largeSelect
     />)
+// number input/counter
+
+//text input with button
+.add('Text Button', () => <Form 
+    label="Voucher Code" 
+    type="text-button"
+    inputType="text"
+/>)
+.add('Large Text Button', () => <Form
+    label="Voucher Code"
+    type="text-button"
+    inputType="text"
+    largeTextButton
+/>)

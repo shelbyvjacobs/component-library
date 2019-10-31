@@ -4,7 +4,7 @@ import { conditionalExpression } from '@babel/types';
 
 const Form= (props) => {
     let classList = ''
-    let types = ['email', 'select']
+    let types = ['email', 'select', 'text-button']
     // conditional styling
     if (types.includes(props.type)) {
         classList += ` input-${props.type}`
@@ -36,6 +36,14 @@ const Form= (props) => {
             <select name={props.type} className={classList}>
                 <option value={props.type}>Select</option>
             </select>
+        )
+    }
+    if (props.inputType == 'text-button'){
+        return (
+                <form onClick={props.onClick}> 
+                    <input type={props} className={classList} placeholder={props.label}></input>
+                    <input type="submit" value="Redeem"></input>
+                </form>
         )
     }
 }
