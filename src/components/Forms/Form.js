@@ -5,7 +5,7 @@ import { conditionalExpression } from '@babel/types';
 const Form= (props) => {
     let classList = ''
     let classList2 = ''
-    let types = ['email', 'select', 'text-button', 'checkbox']
+    let types = ['email', 'select', 'text-button', 'checkbox', 'number']
     // conditional styling
     if (types.includes(props.type)) {
         classList += ` input-${props.type}`
@@ -64,7 +64,15 @@ const Form= (props) => {
     }
     if (props.inputType === 'checkbox'){
         return (
-            <input type={props.inputType} className={classList}></input>
+            <label class="checkbox-label">
+                <input type={props.type} className={classList}></input>
+                <span className="checkbox-custom"></span>
+            </label>
+        )
+    }
+    if (props.inputType === 'number'){
+        return (
+            <input type={props.type} className={classList} min="0" max="25"></input>
         )
     }
 }

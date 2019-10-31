@@ -42,7 +42,13 @@ storiesOf('Form', module)
         inputType="select"
         largeSelect
     />)
+
 // number input/counter
+    .add('Number Counter', () => <Form
+        label="Number Counter"
+        type="number"
+        inputType="number"
+    />)
 
 //text input with button
     .add('Medium Text Button', () => <Form 
