@@ -10,32 +10,43 @@ const Block= (props) => {
         classList += ` block-${props.type}`
     }
     if (props.white) {
-        classList += ` white`
+        classList += ` container white`
     }
     if (props.grey) {
-        classList += ` grey`
+        classList += ` container grey`
     }
     if (props.type == "column"){
         return(
-            <div className={props.container}>
-                <div><img src={props.macbook}></img></div>
+            <div className={classList}>
+                <div><img src={props.image} className={props.opacity}></img></div> 
+                <hr></hr>
                 <div><h2>{props.name}</h2></div>
-                <div><img src={props.rating}></img></div>
-                <div><h3>{props.price}</h3></div>
+                <div><img src={props.rating} className="rating"></img></div>
+                <div><h3>{props.salePrice}</h3> <h4>{props.price}</h4></div>
             </div>
         )
     }
     if (props.type == "doubleColumn"){
         return(
-            <div>
-                {/* insert jsx for the 2 column thumbnail here */}
+            <div className={classList}>
+                <div className={props.leftDiv}><img src={props.image}></img></div>
+                <div className={props.rightDiv}>
+                    <div><h2>{props.name}</h2></div>
+                    <div><img src={props.rating} className="rating"></img></div>
+                    <div><h3>{props.salePrice}</h3> <h4>{props.price}</h4></div>
+                </div>
             </div>
         )
     }
     if (props.type == "smallThumbnail"){
         return(
-            <div>
-                {/* insert jsx for the small thumbnail here */}
+            <div className={classList}>
+                <div className={props.leftDiv}><img src={props.image}></img></div>
+                <div className={props.rightDiv}>
+                    <div><h2>{props.name}</h2></div>
+                    <div><img src={props.rating} className="rating"></img></div>
+                    <div><h3>{props.salePrice}</h3> <h4>{props.price}</h4></div>
+                </div>
             </div>
         )
     }
