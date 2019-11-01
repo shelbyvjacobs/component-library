@@ -5,6 +5,10 @@ import Block from "./Thumbnails.block";
 import macbook from "../Thumbnails Block/Thumbnails.block-img/Macbook.png"
 import rating from "../Thumbnails Block/Thumbnails.block-img/rate.svg"
 import beats from "../Thumbnails Block/Thumbnails.block-img/Beats.png"
+import blueHeart from "../Thumbnails Block/Thumbnails.block-img/blue-heart.svg"
+import blueCart from "../Thumbnails Block/Thumbnails.block-img/blue-cart.svg"
+import whiteHeart from "../Thumbnails Block/Thumbnails.block-img/white-heart.svg"
+import whiteCart from "../Thumbnails Block/Thumbnails.block-img/white-cart.svg"
 import { conditionalExpression } from '@babel/types';
 
 storiesOf('Thumbnails', module)
@@ -18,6 +22,11 @@ storiesOf('Thumbnails', module)
         type="column"
         container="container"
         opacity="opacity"
+        thumbnailHover="thumbnailHover"
+        iconBackground="iconBackground"
+        button="clearButton"
+        icon1={blueHeart}
+        icon2={blueCart}
         white
     />)
 // 1 column grey
@@ -29,6 +38,11 @@ storiesOf('Thumbnails', module)
         price="$500"
         type="column"
         opacity="opacity"
+        thumbnailHover="thumbnailHover"
+        iconBackground="iconBackground"
+        button="blueButton"
+        icon1={whiteHeart}
+        icon2={whiteCart}
         grey
     />)
 

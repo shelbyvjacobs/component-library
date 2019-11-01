@@ -15,14 +15,26 @@ const Block= (props) => {
     if (props.grey) {
         classList += ` container grey`
     }
+    if(props.button == 'clearButton'){
+        classList += ` iconBackground clearButton`
+    }
+    if(props.button == 'blueButton'){
+        classList += ` iconBackground blueButton`
+    }
     if (props.type == "column"){
         return(
-            <div className={classList}>
-                <div><img src={props.image} className={props.opacity}></img></div> 
-                <hr></hr>
-                <div><h2>{props.name}</h2></div>
-                <div><img src={props.rating} className="rating"></img></div>
-                <div><h3>{props.salePrice}</h3> <h4>{props.price}</h4></div>
+            <div className="test">
+                <div className={classList}>
+                    <div><img src={props.image}></img></div> 
+                    <hr></hr>
+                    <div><h2>{props.name}</h2></div>
+                    <div><img src={props.rating} className="rating"></img></div>
+                    <div><h3>{props.salePrice}</h3> <h4>{props.price}</h4></div>
+                </div>
+                <div className={props.thumbnailHover}>
+                    <div className={classList}></div>
+                    <div className={classList}></div>
+                </div>
             </div>
         )
     }
