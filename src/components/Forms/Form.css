@@ -53,6 +53,10 @@
     padding: 15px;
 }
 
+.selectGrey {
+    background-color:#FAFAFB;
+}
+
 /* number input */ 
 
 .plusMinus {
@@ -112,7 +116,6 @@
 /* Code for styling checkboxes from W3Schools */
 /* https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */
 
-/* Customize the label (the container) */
 .checkbox-container {
     display: block;
     position: relative;
@@ -126,7 +129,6 @@
     user-select: none;
   }
   
-  /* Hide the browser's default checkbox */
   .checkbox-container input {
     position: absolute;
     opacity: 0;
@@ -134,19 +136,7 @@
     height: 0;
     width: 0;
   }
-  
-  /* Create a custom checkbox */
-  /* .checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    border: solid #33A0FF;
-    border-radius: 4px;
-  } */
-  
-  /* When the checkbox is checked, add a blue background */
+
   .blue input:checked ~ .checkmarkBlue {
     background-color: #33A0FF;
   }
@@ -175,7 +165,6 @@
     border-radius: 4px;
   }
   
-  /* Create the checkmark/indicator (hidden when not checked) */
   .checkmarkBlue:after {
     content: "";
     position: absolute;
@@ -188,7 +177,6 @@
     display: none;
   }
   
-  /* Show the checkmark when checked */
   .checkbox-container input:checked ~ .checkmarkBlue:after {
     display: block;
   }
@@ -197,7 +185,6 @@
     display: block;
   }
   
-  /* Style the checkmark/indicator */
   .checkbox-container .checkmarkBlue:after {
     left: 9px;
     top: 5px;
@@ -223,7 +210,6 @@
   }
 /* end checkbox styling from W3Schools */
 
-/* checkbox with popup message label */
 .label {
     display: inline;
     font-family: Arial, Helvetica, sans-serif;

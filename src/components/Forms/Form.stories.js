@@ -27,22 +27,45 @@ storiesOf('Form', module)
         largeForm
     />)
 // select inputs
-    .add('Small Select', () => <Form 
+    .add('Small White Select', () => <Form 
         label="Select" 
         type="select"
         inputType="select"
         smallSelect
     />)
-    .add('Medium Select', () => <Form 
+    .add('Medium White Select', () => <Form 
         label="Select" 
         type="select"
         inputType="select"
         mediumSelect
     />)
-    .add('Large Select', () => <Form 
+    .add('Large White Select', () => <Form 
         label="Select" 
         type="select"
         inputType="select"
+        largeSelect
+    />)
+
+// grey select inputs
+    .add('Small Grey Select', () => <Form 
+        label="Select" 
+        type="select"
+        inputType="select"
+        color="selectGrey"
+        smallSelect
+    />)
+    .add('Medium Grey Select', () => <Form 
+        label="Select" 
+        type="select"
+        inputType="select"
+        color="selectGrey"
+        mediumSelect
+    />)
+    .add('Large Grey Select', () => <Form 
+        label="Select" 
+        type="select"
+        inputType="select"
+        color="selectGrey"
         largeSelect
     />)
 
