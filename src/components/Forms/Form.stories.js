@@ -89,4 +89,6 @@ storiesOf('Form', module)
         type="checkbox"
         inputType="checkbox"
         color="black"
+        label="Don't show this popup again"
+        labelClass="label"
     />)

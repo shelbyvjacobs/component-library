@@ -51,6 +51,9 @@ const Form= (props) => {
         return (
             <select name={props.type} className={classList}>
                 <option value={props.type}>Select</option>
+                <option value={props.type}>Option 1</option>
+                <option value={props.type}>Option 2</option>
+                <option value={props.type}>Option 3</option>
             </select>
         )
     }
@@ -64,10 +67,13 @@ const Form= (props) => {
     }
     if (props.inputType === 'checkbox'){
         return (
-            <label class="checkbox-label">
-                <input type={props.type} className={classList}></input>
-                <span className="checkbox-custom"></span>
-            </label>
+            <div>
+                <label class="checkbox-label">
+                    <input type={props.type} className={classList}></input>
+                    <span className="checkbox-custom"></span>
+                </label>
+                <p className={props.labelClass}>{props.label}</p>
+            </div>
         )
     }
     if (props.inputType === 'number'){

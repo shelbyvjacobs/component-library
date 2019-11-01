@@ -159,6 +159,14 @@
     border-radius: 0;
 } */
 
+.label {
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    position: absolute;
+    top: 2px;
+}
+
 .blue {
     border-color: #33A0FF;
     height: 25px;
