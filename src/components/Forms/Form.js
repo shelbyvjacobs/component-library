@@ -31,10 +31,10 @@ const Form= (props) => {
     if (props.button == 'large-button'){
         classList2 += ` largeTextButton`
     }
-    if (props.color == "black"){
+    if (props.color == 'black'){
         classList += ` black`
     }
-    if (props.color == "blue"){
+    if (props.color == 'blue'){
         classList += ` blue`
     }
     if (props.inputType === 'text'){
@@ -72,7 +72,11 @@ const Form= (props) => {
     }
     if (props.inputType === 'number'){
         return (
-            <input type={props.type} className={classList} min="0" max="25"></input>
+            <div>
+                <button className="plusMinus">-</button>
+                <span className={classList}>{props.number}</span>
+                <button className="plusMinus">+</button>
+            </div>
         )
     }
 }

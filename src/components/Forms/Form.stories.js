@@ -48,6 +48,7 @@ storiesOf('Form', module)
         label="Number Counter"
         type="number"
         inputType="number"
+        number="2"
     />)
 
 //text input with button
