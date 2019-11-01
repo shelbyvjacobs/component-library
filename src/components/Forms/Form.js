@@ -32,10 +32,10 @@ const Form= (props) => {
         classList2 += ` largeTextButton`
     }
     if (props.color == 'black'){
-        classList += ` black`
+        classList += ` checkbox-container black`
     }
     if (props.color == 'blue'){
-        classList += ` blue`
+        classList += ` checkbox-container blue`
     }
     if (props.inputType === 'text'){
         return (
@@ -68,9 +68,9 @@ const Form= (props) => {
     if (props.inputType === 'checkbox'){
         return (
             <div>
-                <label class="checkbox-label">
+                <label className={classList}>
                     <input type={props.type} className={classList}></input>
-                    <span className="checkbox-custom"></span>
+                    <span className="checkmark"></span>
                 </label>
                 <p className={props.labelClass}>{props.label}</p>
             </div>

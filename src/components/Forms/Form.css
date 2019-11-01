@@ -73,7 +73,7 @@
     height: 20px;
     width: 20px;
     padding: 15px;
-    border: none;
+    border-top: 1px solid #F1F3F4;
     bottom: 5px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -108,75 +108,85 @@
     outline: none;
 }
 
-/* checkboxes - WORK ON STYLING */
+/* checkboxes */
+/* Code for styling checkboxes from W3Schools */
+/* https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */
 
-/* .checkbox-label input {
+/* Customize the label (the container) */
+.checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .checkbox-container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
-}
-
-.checkbox-label .checkbox-custom {
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
     position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 24px;
-    width: 24px;
-    background-color: transparent;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
     border-radius: 4px;
-    border: 2px solid blue;
-}
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .blue input:checked ~ .checkmark {
+    background-color: #33A0FF;
+  }
 
-.checkbox-label .checkbox-custom:after {
+  .black input:checked ~ .checkmark {
+    background-color: #22262A;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
     position: absolute;
-    content:"";
-    left: 12px;
-    top: 12px;
-    height: 0px;
-    width: 0px;
-    border-radius: 5px;
-    border: solid red;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .checkbox-container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
     border-width: 0 3px 3px 0;
-    opacity: 1;
-} */
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+/* end checkbox styling from W3Schools */
 
-/* .checkbox-label input:checked ~ .checkbox-custom {
-    background-color: white;
-    border-radius: 5px;
-    opacity: 1;
-    border: 2px solid red;
-}
-
-.checkbox-label input:checked ~ .checkbox-custom:after{
-    opacity: 1;
-    left: 8px;
-    top: 3px;
-    width: 6px;
-    height: 12px;
-    border: solid red;
-    border-width: 0 2px 2px 0;
-    background-color: transparent;
-    border-radius: 0;
-} */
-
+/* checkbox with popup message label */
 .label {
     display: inline;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     position: absolute;
-    top: 2px;
-}
-
-.blue {
-    border-color: #33A0FF;
-    height: 25px;
-    width: 25px;
-    border-radius: 4px;
-}
-
-.black {
-    border-color: #22262A;
-    height: 25px;
-    width: 25px;
-    border-radius: 4px;
+    top: -12px;
+    left: 37px;
 }
