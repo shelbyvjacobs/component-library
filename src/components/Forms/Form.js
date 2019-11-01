@@ -70,7 +70,7 @@ const Form= (props) => {
             <div>
                 <label className={classList}>
                     <input type={props.type} className={classList}></input>
-                    <span className="checkmark"></span>
+                    <span className={props.border}></span>
                 </label>
                 <p className={props.labelClass}>{props.label}</p>
             </div>

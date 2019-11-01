@@ -136,39 +136,81 @@
   }
   
   /* Create a custom checkbox */
-  .checkmark {
+  /* .checkmark {
     position: absolute;
     top: 0;
     left: 0;
     height: 25px;
     width: 25px;
-    background-color: #eee;
+    border: solid #33A0FF;
     border-radius: 4px;
-  }
+  } */
   
   /* When the checkbox is checked, add a blue background */
-  .blue input:checked ~ .checkmark {
+  .blue input:checked ~ .checkmarkBlue {
     background-color: #33A0FF;
   }
 
-  .black input:checked ~ .checkmark {
+  .checkmarkBlue {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border: solid #33A0FF;
+    border-radius: 4px;
+  }
+
+  .black input:checked ~ .checkmarkBlack {
     background-color: #22262A;
+  }
+
+  .checkmarkBlack {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border: solid #22262A;
+    border-radius: 4px;
   }
   
   /* Create the checkmark/indicator (hidden when not checked) */
-  .checkmark:after {
+  .checkmarkBlue:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .checkmarkBlack:after {
     content: "";
     position: absolute;
     display: none;
   }
   
   /* Show the checkmark when checked */
-  .checkbox-container input:checked ~ .checkmark:after {
+  .checkbox-container input:checked ~ .checkmarkBlue:after {
+    display: block;
+  }
+
+  .checkbox-container input:checked ~ .checkmarkBlack:after {
     display: block;
   }
   
   /* Style the checkmark/indicator */
-  .checkbox-container .checkmark:after {
+  .checkbox-container .checkmarkBlue:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .checkbox-container .checkmarkBlack:after {
     left: 9px;
     top: 5px;
     width: 5px;
@@ -187,6 +229,6 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     position: absolute;
-    top: -12px;
-    left: 37px;
+    top: -10px;
+    left: 42px;
 }

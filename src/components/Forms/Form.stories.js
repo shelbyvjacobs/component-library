@@ -46,7 +46,7 @@ storiesOf('Form', module)
         largeSelect
     />)
 
-// number input/counter; ADD LOGIC
+// number input/counter; ADD FUNCTIONALITY
     .add('Number Counter', () => <Form
         label="Number Counter"
         type="number"
@@ -78,16 +78,19 @@ storiesOf('Form', module)
     .add('Black Checkbox', () => <Form
         type="checkbox"
         inputType="checkbox"
+        border="checkmarkBlack"
         color="black"
     />)
     .add('Blue Checkbox', () => <Form
         type="checkbox"
         inputType="checkbox"
+        border="checkmarkBlue"
         color="blue"
     />)
     .add('Black Checkbox No Popups', () => <Form
         type="checkbox"
         inputType="checkbox"
+        border="checkmarkBlack"
         color="black"
         label="Don't show this popup again"
         labelClass="label"
