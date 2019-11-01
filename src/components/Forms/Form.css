@@ -1,5 +1,5 @@
 /* form input */
-p{
+.paragraph{
     margin: 5px 0px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
@@ -79,18 +79,33 @@ p{
 }
 
 /* text input with button */
+.input-text-button {
+    border-radius: 4px 0px 0px 4px;
+    border: solid 1px #F1F3F4;
+}
+
 .mediumTextButton{
     background-color: #33A0FF;
-    padding: 12px;
+    padding: 11px;
     border-radius: 0px 4px 4px 0px;
     color: white;
+    border: none;
 }
 
 .largeTextButton{
     background-color: #33A0FF;
-    padding: 17px;
+    padding: 16px;
     border-radius: 0px 4px 4px 0px;
     color: white;
+    border: none;
+}
+
+.mediumTextButton:focus{
+    outline: none;
+}
+
+.largeTextButton:focus {
+    outline: none;
 }
 
 /* checkboxes - WORK ON STYLING */

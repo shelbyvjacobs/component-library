@@ -40,7 +40,7 @@ const Form= (props) => {
     if (props.inputType === 'text'){
         return (
             <div>
-            <p>Email</p>
+            <p className={props.paragraph}>Email</p>
             <form onClick={props.onClick}> 
                 <input type={props} className={classList} placeholder={props.label}></input>
             </form>
@@ -56,9 +56,9 @@ const Form= (props) => {
     }
     if (props.inputType === 'text-button'){
         return (
-            <form onClick={props.onClick}> 
+            <form> 
                 <input type={props} className={classList} placeholder={props.label}></input>
-                <input type="submit" value="Redeem" className={classList2}></input>
+                <input type="submit" value={props.value} className={classList2} onClick={props.onClick}></input>
             </form>
         )
     }
@@ -73,9 +73,9 @@ const Form= (props) => {
     if (props.inputType === 'number'){
         return (
             <div>
-                <button className="plusMinus">-</button>
+                <button className="plusMinus" onClick={props.onClick}>{props.minus}</button>
                 <span className={classList}>{props.number}</span>
-                <button className="plusMinus">+</button>
+                <button className="plusMinus" onClick={props.onClick}>{props.plus}</button>
             </div>
         )
     }

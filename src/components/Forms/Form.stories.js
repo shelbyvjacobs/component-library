@@ -10,17 +10,20 @@ storiesOf('Form', module)
         label="Email" 
         type="email"
         inputType="text"
+        paragraph="paragraph"
     />)
     .add('Medium Email', () => <Form
         label="Email"
         type="email"
         inputType="text"
+        paragraph="paragraph"
         mediumForm
     />)
     .add('Large Email', () => <Form
         label="Email"
         type="email"
         inputType="text"
+        paragraph="paragraph"
         largeForm
     />)
 // select inputs
@@ -43,17 +46,20 @@ storiesOf('Form', module)
         largeSelect
     />)
 
-// number input/counter
+// number input/counter; ADD LOGIC
     .add('Number Counter', () => <Form
         label="Number Counter"
         type="number"
         inputType="number"
         number="2"
+        plus="+"
+        minus="-"
     />)
 
 //text input with button
     .add('Medium Text Button', () => <Form 
-        label="Voucher Code" 
+        label="Voucher Code"
+        value="Redeem" 
         type="text-button"
         inputType="text-button"
         button="medium-button"
@@ -61,6 +67,7 @@ storiesOf('Form', module)
     />)
     .add('Large Text Button', () => <Form
         label="Voucher Code"
+        value="Redeem" 
         type="text-button"
         inputType="text-button"
         button="large-button"
