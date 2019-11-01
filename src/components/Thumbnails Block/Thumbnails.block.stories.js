@@ -77,4 +77,16 @@ storiesOf('Thumbnails', module)
     />)
 
 // inline thumbnail
-
+    .add('Inline Thumbnail', () => <Block
+        image={macbook}
+        name="Apple Macbook Pro"
+        rating={rating}
+        reviews="0 reviews"
+        submitReview="Submit a review"
+        salePrice="$499"
+        price="$500"
+        description="Lorem ipsum"
+        icon1={blueCart}
+        icon2={blueHeart}
+        type="inline"
+    />)

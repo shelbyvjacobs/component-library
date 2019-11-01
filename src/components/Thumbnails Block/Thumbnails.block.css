@@ -79,8 +79,7 @@ h4 {
 .blueButton {
     background-color: #33A0FF;
     border-radius: 50%;
-    border: 3px solid #33A0FF;
-    display: inline;
+    border: 2px solid #33A0FF;
     padding: 10px;
     margin: 75px 10px;
 }
@@ -88,9 +87,8 @@ h4 {
 .clearButton {
     background-color: transparent;
     border-radius: 50%;
-    border: 3px solid;
+    border: 2px solid;
     border-color: rgba(51, 160, 255, .25);
-    display: inline;
     padding: 10px;
     margin: 75px 10px;
 }

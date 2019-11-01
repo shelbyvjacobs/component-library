@@ -26,6 +26,7 @@ const Block= (props) => {
                     <div><h3>{props.salePrice}</h3> <h4>{props.price}</h4></div>
                 </div>
                 <div className={props.thumbnailHover}>
+                    {/* refactor to make icons the background? so that they aren't cut off by the padding */}
                     <div className={props.iconBackground}><img src={props.icon1} className={props.button}></img></div>
                     <div className={props.iconBackground}><img src={props.icon2} className={props.button}></img></div>
                 </div>
