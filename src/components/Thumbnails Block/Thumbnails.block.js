@@ -15,12 +15,6 @@ const Block= (props) => {
     if (props.grey) {
         classList += ` container grey`
     }
-    if(props.button == 'clearButton'){
-        classList += ` iconBackground clearButton`
-    }
-    if(props.button == 'blueButton'){
-        classList += ` iconBackground blueButton`
-    }
     if (props.type == "column"){
         return(
             <div className="test">
@@ -32,8 +26,8 @@ const Block= (props) => {
                     <div><h3>{props.salePrice}</h3> <h4>{props.price}</h4></div>
                 </div>
                 <div className={props.thumbnailHover}>
-                    <div className={classList}></div>
-                    <div className={classList}></div>
+                    <div className={props.iconBackground}><img src={props.icon1} className={props.button}></img></div>
+                    <div className={props.iconBackground}><img src={props.icon2} className={props.button}></img></div>
                 </div>
             </div>
         )

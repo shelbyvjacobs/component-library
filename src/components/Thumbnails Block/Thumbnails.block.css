@@ -55,20 +55,44 @@ h4 {
 }
 
 .thumbnailHover {
-    /* background-color: rgba(50,50,50,.5); */
+    opacity: 0;
     position: absolute;
     top: 10px;
     height: 370px;
+    width: 300px;
     border: none;
+    display: flex;
+    flex: column;
+    justify-content: center;
 }
 
 .thumbnailHover:hover {
-    display: block;
+    opacity: 1;
     background-color: rgba(255, 255, 255, .9);
     position: absolute;
     top: 50px;
     height: 200px;
+    width: 300px;
     border: none;
+}
+
+.blueButton {
+    background-color: #33A0FF;
+    border-radius: 50%;
+    border: 3px solid #33A0FF;
+    display: inline;
+    padding: 10px;
+    margin: 75px 10px;
+}
+
+.clearButton {
+    background-color: transparent;
+    border-radius: 50%;
+    border: 3px solid;
+    border-color: rgba(51, 160, 255, .25);
+    display: inline;
+    padding: 10px;
+    margin: 75px 10px;
 }
 
 /* double column */
