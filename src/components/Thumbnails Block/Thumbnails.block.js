@@ -17,8 +17,11 @@ const Block= (props) => {
     }
     if (props.type == "column"){
         return(
-            <div>
-                {/* insert jsx for the 1 column thumbnail here */}
+            <div className={props.container}>
+                <div><img src={props.macbook}></img></div>
+                <div><h2>{props.name}</h2></div>
+                <div><img src={props.rating}></img></div>
+                <div><h3>{props.price}</h3></div>
             </div>
         )
     }
