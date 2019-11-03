@@ -1,0 +1,21 @@
+.paragraph{
+    margin: 5px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.input-email{
+    padding: 5px;
+}
+
+.input-email:focus{
+    outline: none;
+}
+
+.mediumForm{
+    padding: 10px;
+}
+
+.largeForm{
+    padding: 15px;
+}

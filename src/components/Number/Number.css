@@ -1,0 +1,22 @@
+.plusMinus {
+    padding: 15px;
+    background-color:#F1F3F4;
+    border: none;
+    color: #33A0FF;
+    font-size: 15px;
+    border-radius: 0px;
+}
+
+.plusMinus:focus {
+    outline: none;
+}
+
+.input-number {
+    background-color:#F1F3F4;
+    height: 20px;
+    width: 20px;
+    padding: 15px;
+    border-top: 1px solid #F1F3F4;
+    bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}

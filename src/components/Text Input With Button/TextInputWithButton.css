@@ -1,0 +1,28 @@
+.input-text-button {
+    border-radius: 4px 0px 0px 4px;
+    border: solid 1px #F1F3F4;
+}
+
+.mediumTextButton{
+    background-color: #33A0FF;
+    padding: 11px;
+    border-radius: 0px 4px 4px 0px;
+    color: white;
+    border: none;
+}
+
+.largeTextButton{
+    background-color: #33A0FF;
+    padding: 16px;
+    border-radius: 0px 4px 4px 0px;
+    color: white;
+    border: none;
+}
+
+.mediumTextButton:focus{
+    outline: none;
+}
+
+.largeTextButton:focus {
+    outline: none;
+}
