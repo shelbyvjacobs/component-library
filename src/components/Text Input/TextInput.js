@@ -16,16 +16,16 @@ const TextInput= (props) => {
         classList += ` largeForm`
     }
 
-    if (props.inputType === 'text'){
-        return (
-            <div>
-            <p className={props.paragraph}>Email</p>
-            <form onChange={props.onChange}> 
-                <input type={props} className={classList} placeholder={props.label}></input>
-            </form>
-            </div>
-        )
-    }
+    // functionality
+
+    return (
+        <div>
+        <p className={props.paragraph}>Email</p>
+        <form onChange={props.onChange}> 
+            <input type={props} className={classList} placeholder={props.label}></input>
+        </form>
+        </div>
+    )
 }
 
 export default TextInput;

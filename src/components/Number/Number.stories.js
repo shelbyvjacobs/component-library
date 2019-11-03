@@ -8,7 +8,6 @@ storiesOf('Number', module)
     .add('Number Counter', () => <Number
         label="Number Counter"
         type="number"
-        inputType="number"
         number="2"
         plus="+"
         minus="-"

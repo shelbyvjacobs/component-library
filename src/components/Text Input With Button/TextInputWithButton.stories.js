@@ -9,7 +9,6 @@ storiesOf('Text Input With Button', module)
         label="Voucher Code"
         value="Redeem" 
         type="text-button"
-        inputType="text-button"
         button="medium-button"
         mediumForm
     />)
@@ -17,7 +16,6 @@ storiesOf('Text Input With Button', module)
         label="Voucher Code"
         value="Redeem" 
         type="text-button"
-        inputType="text-button"
         button="large-button"
         largeForm
     />)

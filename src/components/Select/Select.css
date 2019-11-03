@@ -3,7 +3,7 @@
     display: inline-block;
     width: auto;
     background-color: white;
-    background-image: url('../Forms/Form-img/arrow down.svg');
+    background-image: url('../Select/Select-img/arrow-down.svg');
     background-repeat: no-repeat, repeat;
     background-position: right .7em top 50%, 0 0;
     -webkit-appearance: none; 

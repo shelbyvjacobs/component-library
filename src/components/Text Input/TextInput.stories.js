@@ -8,20 +8,17 @@ storiesOf('Text Input', module)
     .add('Email', () => <TextInput  
         label="Email" 
         type="email"
-        inputType="text"
         paragraph="paragraph"
     />)
     .add('Medium Email', () => <TextInput  
         label="Email"
         type="email"
-        inputType="text"
         paragraph="paragraph"
         mediumForm
     />)
     .add('Large Email', () => <TextInput  
         label="Email"
         type="email"
-        inputType="text"
         paragraph="paragraph"
         largeForm
     />)
