@@ -35,3 +35,32 @@ const Select= (props) => {
 }
 
 export default Select;
+
+// class Select extends Component {
+//     constructor(props){
+//         super(props)
+//         this.state={
+//             // add state
+//         }
+//         this.handleSelection = this.handleSelection.bind(this);
+//     }
+
+//     // add event functions here
+//     handleSelection = () => {
+
+//     }
+
+//     render(){
+//         return (
+//             <div>
+//                 <label className={classList} onClick={props.onClick}>
+//                     <input type={props.type} className={classList}></input>
+//                     <span className={props.border}></span>
+//                 </label>
+//                 <p className={props.labelClass}>{props.label}</p>
+//             </div>
+//         )
+//     }
+// }
+
+// export default Select;

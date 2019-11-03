@@ -30,3 +30,32 @@ const Checkbox= (props) => {
 }
 
 export default Checkbox;
+
+// class Checkbox extends Component {
+//     constructor(props){
+//         super(props)
+//         this.state={
+//             // add state
+//         }
+//         this.toggleCheck = this.toggleCheck.bind(this);
+//     }
+
+//     add event functions here
+//     toggleCheck = () => {
+
+//     }
+
+//     render(){
+//         return (
+//             <div>
+//                 <label className={classList} onClick={props.onClick}>
+//                     <input type={props.type} className={classList}></input>
+//                     <span className={props.border}></span>
+//                 </label>
+//                 <p className={props.labelClass}>{props.label}</p>
+//             </div>
+//         )
+//     }
+// }
+
+// export default Checkbox;
