@@ -44,7 +44,7 @@ const Form= (props) => {
         return (
             <div>
             <p className={props.paragraph}>Email</p>
-            <form onClick={props.onClick}> 
+            <form onChange={props.onChange}> 
                 <input type={props} className={classList} placeholder={props.label}></input>
             </form>
             </div>
@@ -52,12 +52,21 @@ const Form= (props) => {
     }
     if (props.inputType === 'select'){
         return (
-            <select name={props.type} className={classList}>
+            <select name={props.type} className={classList} onChange={props.onChange}>
                 <option value={props.type}>Select</option>
                 <option value={props.type}>Option 1</option>
                 <option value={props.type}>Option 2</option>
                 <option value={props.type}>Option 3</option>
             </select>
+        )
+    }
+    if (props.inputType === 'number'){
+        return (
+            <div>
+                <button className="plusMinus" onClick={props.onClick}>{props.minus}</button>
+                <span className={classList}>{props.number}</span>
+                <button className="plusMinus" onClick={props.onClick}>{props.plus}</button>
+            </div>
         )
     }
     if (props.inputType === 'text-button'){
@@ -71,20 +80,11 @@ const Form= (props) => {
     if (props.inputType === 'checkbox'){
         return (
             <div>
-                <label className={classList}>
+                <label className={classList} onClick={props.onClick}>
                     <input type={props.type} className={classList}></input>
                     <span className={props.border}></span>
                 </label>
                 <p className={props.labelClass}>{props.label}</p>
-            </div>
-        )
-    }
-    if (props.inputType === 'number'){
-        return (
-            <div>
-                <button className="plusMinus" onClick={props.onClick}>{props.minus}</button>
-                <span className={classList}>{props.number}</span>
-                <button className="plusMinus" onClick={props.onClick}>{props.plus}</button>
             </div>
         )
     }
